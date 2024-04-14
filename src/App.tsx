@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+
+  let name :string= "ali"
+  name="1"
+
+  ////////////////////////////////////////////////
+  let array:number[]=[1,2,3]
+  let array2:(number|string)[]=[1,"sara"]
+
+  let user:{name:string;age:number}={
+    name:"sara",
+    age:25
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      TypeScript
     </div>
   );
 }
