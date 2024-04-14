@@ -1,6 +1,10 @@
 import React from 'react';
+
 type User2={name:string;age:number}
 export type Array2={num1:number}
+function sum(a:number,b:number):number{
+  return a+b
+}
 function App() {
 
   let name :string= "ali"
@@ -17,6 +21,7 @@ function App() {
   return (
     <div>
       TypeScript
+      <h1>{sum(2,5)}</h1>
     </div>
   );
 }
