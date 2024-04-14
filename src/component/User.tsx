@@ -1,12 +1,14 @@
 import React from "react";
-function User(Props: { name: string; age: number; hasChild: boolean }) {
+function User(props: { name: string; age: number; hasChild: boolean, sum:(a:number,b:number)=> number }) {
 
     return (
         <div>
-            {Props.name}
-            {Props.age}
+            {props.name}
+            {props.age}
 
-            {`${Props.hasChild}`}
+            {`${props.hasChild}`}<br/>
+            {props.sum(4,5)}
+
         </div>
     )
 }
