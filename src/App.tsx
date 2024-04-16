@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import User from './component/User'
 import Article from './component/Article'
+import { SrvRecord } from 'dns';
+import Second from './component/Second';
 
 // type User2={name:string;age:number}
 // export type Array2={num1:number}
@@ -12,7 +14,8 @@ type State = {
   age: 25
 }
 function App() {
-  const [state, setState] = useState<State | null>(null);
+  // const [state, setState] = useState<State | null>(null);
+  const [state, setState] = useState<string>("sara");
 
   // let name :string= "ali"
   // name="1"
@@ -34,9 +37,11 @@ function App() {
       <Article>
         <h1>dddd</h1>
       </Article>
-      {
+      {/* {
         state?.name
-      }
+      } */}
+
+      <Second value={state} onChange={setState}/>
     </div>
   );
 }
