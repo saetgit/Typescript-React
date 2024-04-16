@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import User from './component/User'
 import Article from './component/Article'
 
@@ -7,7 +7,12 @@ import Article from './component/Article'
 function sum(a: number, b: number): number {
   return a + b
 }
+type State = {
+  name: string;
+  age: 25
+}
 function App() {
+  const [state, setState] = useState<State | null>(null);
 
   // let name :string= "ali"
   // name="1"
@@ -29,6 +34,9 @@ function App() {
       <Article>
         <h1>dddd</h1>
       </Article>
+      {
+        state?.name
+      }
     </div>
   );
 }
