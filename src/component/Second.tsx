@@ -1,9 +1,13 @@
 import React from "react";
 
-type TSecond = {
+interface TSecond {
     value:string;
     onChange: React.Dispatch<React.SetStateAction<string>>
 }
+// type TSecond = {
+//     value:string;
+//     onChange: React.Dispatch<React.SetStateAction<string>>
+// }
 
 function Second({ value,onChange }: TSecond) {
 
