@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import User from './component/User'
 import Article from './component/Article'
 import { SrvRecord } from 'dns';
@@ -51,6 +51,8 @@ function App() {
   //   name:"sara",
   //   age:25
   // }
+
+  const ref = useRef<HTMLButtonElement>(null)
   return (
     <div>
       TypeScript
@@ -64,10 +66,11 @@ function App() {
         state?.name
       } */}
 
-      <Second value={state} onChange={setState}/>
+      <Second value={state} onChange={setState} />
 
 
-      <Button/>
+      <Button />
+      <button ref={ref}>click</button>
     </div>
   );
 }
