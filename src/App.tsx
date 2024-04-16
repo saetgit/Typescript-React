@@ -11,7 +11,29 @@ function sum(a: number, b: number): number {
 }
 type State = {
   name: string;
-  age: 25
+  age: number
+}
+type State2 = State & {
+  childern:string[]
+}
+let st:State2={
+  name:"",
+  age:22,
+  childern:["sara"]
+
+}
+interface IState {
+  name: string;
+  age: number
+}
+interface IState2 extends IState  {
+  childern:string[]
+}
+let ist:IState2={
+  name:"",
+  age:22,
+  childern:["sara"]
+
 }
 function App() {
   // const [state, setState] = useState<State | null>(null);
