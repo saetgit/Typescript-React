@@ -1,9 +1,11 @@
 import React from 'react';
 import User from './component/User'
+import Article from './component/Article'
+
 // type User2={name:string;age:number}
 // export type Array2={num1:number}
-function sum(a:number,b:number):number{
-  return a+b
+function sum(a: number, b: number): number {
+  return a + b
 }
 function App() {
 
@@ -22,7 +24,11 @@ function App() {
     <div>
       TypeScript
       {/* <h1>{sum(2,5)}</h1> */}
-      <User name="sara" age={24} hasChild={true} sum={sum} father='ss' mother={'momi'}/>
+      <User name="sara" age={24} hasChild={true} sum={sum} father='ss' mother={'momi'} />
+      <br />
+      <Article>
+        <h1>dddd</h1>
+      </Article>
     </div>
   );
 }
