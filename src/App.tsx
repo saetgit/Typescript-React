@@ -3,6 +3,7 @@ import User from './component/User'
 import Article from './component/Article'
 import { SrvRecord } from 'dns';
 import Second from './component/Second';
+import Button from './component/Button';
 
 // type User2={name:string;age:number}
 // export type Array2={num1:number}
@@ -13,28 +14,28 @@ type State = {
   name: string;
   age: number
 }
-type State2 = State & {
-  childern:string[]
-}
-let st:State2={
-  name:"",
-  age:22,
-  childern:["sara"]
+// type State2 = State & {
+//   childern:string[]
+// }
+// let st:State2={
+//   name:"",
+//   age:22,
+//   childern:["sara"]
 
-}
-interface IState {
-  name: string;
-  age: number
-}
-interface IState2 extends IState  {
-  childern:string[]
-}
-let ist:IState2={
-  name:"",
-  age:22,
-  childern:["sara"]
+// }
+// interface IState {
+//   name: string;
+//   age: number
+// }
+// interface IState2 extends IState  {
+//   childern:string[]
+// }
+// let ist:IState2={
+//   name:"",
+//   age:22,
+//   childern:["sara"]
 
-}
+// }
 function App() {
   // const [state, setState] = useState<State | null>(null);
   const [state, setState] = useState<string>("sara");
@@ -64,6 +65,9 @@ function App() {
       } */}
 
       <Second value={state} onChange={setState}/>
+
+
+      <Button/>
     </div>
   );
 }
