@@ -1,6 +1,10 @@
 import React from "react";
 type USER = {
-    name: string; age: number; hasChild: boolean; sum: (a: number, b: number) => number
+    name: string;
+     age: number; 
+     hasChild: boolean; 
+     sum: (a: number, b: number) => number;
+     father?:string
 }
 
 // function
@@ -9,7 +13,7 @@ type USER = {
 
 
 // arrow function
-    const User:React.FC<USER>=({age,name,hasChild,sum})=> {
+const User: React.FC<USER> = ({ age, name, hasChild, sum ,father}) => {
 
     return (
         <div>
@@ -18,6 +22,7 @@ type USER = {
 
             {`${hasChild}`}<br />
             {sum(4, 5)}
+            <h1>{father}</h1>
 
         </div>
     )

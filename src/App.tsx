@@ -22,7 +22,7 @@ function App() {
     <div>
       TypeScript
       {/* <h1>{sum(2,5)}</h1> */}
-      <User name="sara" age={24} hasChild={true} sum={sum}/>
+      <User name="sara" age={24} hasChild={true} sum={sum} father=''/>
     </div>
   );
 }
